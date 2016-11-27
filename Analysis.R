@@ -1,5 +1,5 @@
 # Load dataset
-tweet <- read.csv("~/Springboard-Capstone/how-isis-uses-twitter/tweets.csv")
+tweet <- read.csv("~/Assorted R Scripts/alexander_springboard/Springboard-Capstone/how-isis-uses-twitter/tweets.csv")
 
 tweet <- as.character(tweet$tweets)
 
@@ -40,6 +40,6 @@ ggplot(df, aes(x = term, y=freq, reorder(term.freq))) +
 
 library(wordcloud)
 wordcloud(words = df$term, freq = df$freq, random.order=FALSE, rot.per=0.25, 
-          colors=brewer.pal(8, "Dark2"))
+colors=brewer.pal(8, "Dark2"))
 
 # Force commit
